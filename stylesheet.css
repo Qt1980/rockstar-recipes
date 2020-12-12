@@ -1,0 +1,30 @@
+* {
+    outline: 1px black solid;
+}
+header{
+    background-color:aqua;
+    padding: 0px
+}
+section{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,97,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+footer{
+    background-color: aqua;
+}
+body{
+    background-color: blue;
+}
+h2{
+    background-color: aqua;
+    padding-left: 350px;
+}
+p{
+    color:chocolate
+}
+nav{
+    background-color: white;
+}
+img{
+    padding-left: 190px;
+}
