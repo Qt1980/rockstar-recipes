@@ -4,17 +4,20 @@ var promptQuestion = "What's the best comfort food? Tacos or Nachos?";
 var response = prompt(promptQuestion);
 console.log(response);
 var reflected;
-var color;
-var alertMessage;
+
+var alertMessage = "";
+var color;"#FF0000"
 
 if (response === "Nachos") {
-    reflected = "Exactly! High Five!"
+    alertMessage = "Exactly! High Five!";
+    color = "#0000ff";
 }else if(response === "Tacos") {
-    console.log = (respone)
     alertMessage = "Tacos are good but you can do better!"
     color = "#FF0000";
 }else {
     reflected = "Not real food!"
-    color = "#FF0000";
+    alert(reflected)
 }
-alert(reflected);
+var container = document.getElementById("reflected")
+container.innerText = alertMessage
+container.style.color = color
