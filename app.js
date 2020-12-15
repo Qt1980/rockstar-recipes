@@ -34,4 +34,5 @@ function changebackgroundcolor(answer){
     else if(answer === "Tacos"){
         color = "Yellow";
     }
+    document.getElementById("content").style.backgroundColor = color;
 }
