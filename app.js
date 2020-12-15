@@ -8,17 +8,15 @@ function realtalk(){
 
 function nachosortacos(response){
     var alertMessage = "";
-    var color = "";
     if (response === "Nachos"){
         alertMessage = "Exactly! High Five!";
-        color = "#0000ff";
     }     
     else if(response === "Tacos"){
         alertMessage = "Tacos are good but you can do better!";
-        color = "#FF0000";
     }       
     else {
         alertMessage = "Not real food!";
+        color = "White";
     }
     
     var container = document.getElementById("reflected")
@@ -28,3 +26,12 @@ function nachosortacos(response){
 }
 realtalk();
 
+function changebackgroundcolor(answer){
+    var color = "";
+    if (answer === "Nachos"){
+        color = "silver";
+    }
+    else if(answer === "Tacos"){
+        color = "Yellow";
+    }
+}
