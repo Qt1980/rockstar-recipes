@@ -1,4 +1,16 @@
-console.log("Hello Seattle");
+console.log('Hello Seattle')
+
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow >18) {
+    greeting = 'Bonsoir!';
+}else if (hourNow > 12) {
+    greeting = 'Bonnes apres-midi!';
+}else if (hourNow > 0) {
+    greeting = 'Bonjour!';
+}
 
 function realtalk(){
     var promptQuestion = "What's the best comfort food? Tacos or Nachos?";
