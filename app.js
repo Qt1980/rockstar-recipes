@@ -26,8 +26,10 @@ function nachosortacos(response){
 }
 realtalk();
 
+var color;
+
 function changebackgroundcolor(answer){
-    var color = "";
+
     if (answer === "Nachos"){
         color = "silver";
     }
