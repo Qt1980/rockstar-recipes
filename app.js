@@ -56,3 +56,18 @@ function changebackgroundcolor(answer){
 var response; 
 response = realtalk();
 changebackgroundcolor(response);
+
+function validateUserPassword() {
+    var storedPassword = 'comein';
+    do {
+        var pswd = getUserPrompt("Enter a Password")
+    }while(pswd !== storedPassword);
+}
+
+validateUserPassword();
+
+var infiniteNachos = getUserPrompt("How many Nachos do you want?");
+for (var i = 0; i < numberOfNachos; i++) {
+    console.log(i);
+    addNachosToDocument("Nachos", "Awesome");
+}
