@@ -12,18 +12,17 @@ if (hourNow >18) {
     greeting = 'Bonjour!';
 } 
 
-document.write(greeting)
+document.getElementById("greeting-msg").innerText = greeting;
+
 
 function realtalk(){
-    var promptQuestion = "What's the best comfort food? Tacos or Nachos?";
-    var response = prompt(promptQuestion);
+    var response = prompt("What's the best comfort food? Tacos or Nachos?");
     nachosortacos(response);
-    return response;
-
 }
 
 function nachosortacos(response){
-    var alertMessage = "";
+    var alertMessage;
+
     if (response === "Nachos"){
         alertMessage = "Exactly! High Five!";
     }     
@@ -32,42 +31,32 @@ function nachosortacos(response){
     }       
     else {
         alertMessage = "Not real food!";
-        color = "White";
     }
-    
-    var container = document.getElementById("reflected")
-    container.innerText = alertMessage
-    container.style.color = color
     alert(alertMessage);
 }
-realtalk();
-
-function changebackgroundcolor(answer){
-
-    if (answer === "Nachos"){
-        color = "silver";
-    }
-    else if(answer === "Tacos"){
-        color = "Yellow";
-    }
-    document.getElementById("content").style.backgroundColor = color;
-}
-
-var response; 
-response = realtalk();
-changebackgroundcolor(response);
 
 function validateUserPassword() {
     var storedPassword = 'comein';
     do {
-        var pswd = getUserPrompt("Enter a Password")
+        var pswd = prompt("Enter a Password");
     }while(pswd !== storedPassword);
 }
 
+realtalk();
 validateUserPassword();
 
-var infiniteNachos = getUserPrompt("How many Nachos do you want?");
-for (var i = 0; i < numberOfNachos; i++) {
-    console.log(i);
-    addNachosToDocument("Nachos", "Awesome");
+function bottomlessfood(number1, description) {
+    if(number1 === "Nachos") {
+        console.log(description)
+    }
+    //document.write('<img src=number1 +".jpg\">');
+    
 }
+
+
+var infiniteNachos = prompt("How many Nachos do you want?");
+for (var i = 0; i < infiniteNachos; i++) {
+    console.log(i);
+    bottomlessfood("Nachos", "Awesome! Enjoy these Keto Nachos");
+}
+
