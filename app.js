@@ -18,6 +18,8 @@ function realtalk(){
     var promptQuestion = "What's the best comfort food? Tacos or Nachos?";
     var response = prompt(promptQuestion);
     nachosortacos(response);
+    return response;
+
 }
 
 function nachosortacos(response){
@@ -52,3 +54,7 @@ function changebackgroundcolor(answer){
     }
     document.getElementById("content").style.backgroundColor = color;
 }
+
+var response; 
+response = realtalk();
+changebackgroundcolor(response);
