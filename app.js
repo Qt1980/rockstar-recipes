@@ -41,21 +41,21 @@ function validateUserPassword() {
     }while(pswd !== storedPassword);
 }
 
-realtalk();
-validateUserPassword();
+var userFavFood = realtalk();
 
-function bottomlessfood(number1, description) {
-    if(number1 === "Nachos") {
-        console.log(description)
-    }
-    //document.write('<img src=number1 +".jpg\">');
+function bottomlessfood(userFavFood) {
+    
+   document.write("<img src=\"" + userFavFood + ".jpg\">")
     
 }
 
 
 var infiniteNachos = prompt("How many Nachos do you want?");
+
 for (var i = 0; i < infiniteNachos; i++) {
     console.log(i);
-    bottomlessfood("Nachos", "Awesome! Enjoy these Keto Nachos");
+    bottomlessfood(userFavFood, "Awesome! Enjoy these Keto Nachos");
 }
 
+// realtalk();
+// validateUserPassword();
