@@ -17,6 +17,8 @@ document.getElementById("greeting-msg").innerText = greeting;
 function realtalk(){
     var response = prompt("What's the best comfort food? Tacos or Nachos?");
     nachosortacos(response);
+
+    return response;
 }
 
 function nachosortacos(response){
@@ -41,21 +43,34 @@ function validateUserPassword() {
     }while(pswd !== storedPassword);
 }
 
-realtalk();
-validateUserPassword();
+var userFavFood = realtalk();
+// validateUserPassword();
 
-function bottomlessfood(number1, description) {
-    if(number1 === "Nachos") {
-        console.log(description)
-    }
-    //document.write('<img src=number1 +".jpg\">');
+function bottomlessfood(userFavFood) {
+
+    // var foo = "<img src=\"";
+    // var bar = userFavFood;
+    // var baz = ".jpg\">";
+
+    // var imgHTML = foo + bar + baz;
+
+    // console.log(imgHTML);
+
+    document.write("<img src=\"" + userFavFood + ".jpg\">")
+    // document.write('<img src="Nachos.jpg">');
+    // document.write(imgHTML);
     
 }
 
 
+// Ask user for number of Nachos
 var infiniteNachos = prompt("How many Nachos do you want?");
+
+// 1. Declare the index variable
+// 2. Declare loop condition
+// 3. Index incrementer
 for (var i = 0; i < infiniteNachos; i++) {
     console.log(i);
-    bottomlessfood("Nachos", "Awesome! Enjoy these Keto Nachos");
+    bottomlessfood(userFavFood, "Awesome! Enjoy these Keto Nachos");
 }
 
