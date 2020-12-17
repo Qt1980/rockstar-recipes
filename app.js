@@ -11,9 +11,8 @@ if (hourNow >18) {
 }else if (hourNow > 0) {
     greeting = 'Bonjour!';
 } 
-
+    
 document.getElementById("greeting-msg").innerText = greeting;
-
 
 function realtalk(){
     var response = prompt("What's the best comfort food? Tacos or Nachos?");
