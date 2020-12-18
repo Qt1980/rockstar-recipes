@@ -57,5 +57,5 @@ for (var i = 0; i < infiniteNachos; i++) {
     bottomlessfood(userFavFood, "Awesome! Enjoy these Keto Nachos");
 }
 
-// realtalk();
-// validateUserPassword();
+realtalk();
+validateUserPassword();
